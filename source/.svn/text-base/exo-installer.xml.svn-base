@@ -1,0 +1,111 @@
+<project>
+    <shortName>exo</shortName>
+    <fullName>Exo Alpha</fullName>
+    <version>1.0</version>
+    <leftImage>images/left.png</leftImage>
+    <logoImage>images/logo.png</logoImage>
+    <splashImage>images/exo.png</splashImage>
+    <allowLanguageSelection>1</allowLanguageSelection>
+    <enableRollback>0</enableRollback>
+    <outputDirectory>${installbuilder_install_root}/output</outputDirectory>
+    <saveRelativePaths>1</saveRelativePaths>
+    <width>450</width>
+    <componentList>
+        <component>
+            <name>default</name>
+            <description>Default Component</description>
+            <canBeEdited>1</canBeEdited>
+            <selected>1</selected>
+            <show>1</show>
+            <folderList>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfiles</name>
+                    <platforms>all</platforms>
+                    <distributionFileList>
+                        <distributionDirectory>
+                            <origin>../data</origin>
+                        </distributionDirectory>
+                    </distributionFileList>
+                    <shortcutList>
+                        <shortcut>
+                            <comment>Uninstall</comment>
+                            <exec>${installdir}/uninstall</exec>
+                            <icon></icon>
+                            <name>Uninstall ${product_fullname}</name>
+                            <path>${installdir}</path>
+                            <platforms>all</platforms>
+                            <runInTerminal>0</runInTerminal>
+                            <windowsExec>${installdir}/uninstall.exe</windowsExec>
+                            <windowsExecArgs></windowsExecArgs>
+                            <windowsIcon></windowsIcon>
+                            <windowsPath>${installdir}</windowsPath>
+                        </shortcut>
+                    </shortcutList>
+                </folder>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfileslinux</name>
+                    <platforms>linux-x64</platforms>
+                    <distributionFileList>
+                        <distributionFile>
+                            <origin>../exo</origin>
+                        </distributionFile>
+                    </distributionFileList>
+                </folder>
+                <folder>
+                    <description>Program Files</description>
+                    <destination>${installdir}</destination>
+                    <name>programfileswindows</name>
+                    <platforms>windows</platforms>
+                    <distributionFileList>
+                        <distributionFile>
+                            <origin>../levelEditor.exe</origin>
+                        </distributionFile>
+                    </distributionFileList>
+                </folder>
+            </folderList>
+            <startMenuShortcutList>
+                <startMenuShortcut>
+                    <comment>Uninstall ${product_fullname}</comment>
+                    <name>Uninstall ${product_fullname}</name>
+                    <runInTerminal>0</runInTerminal>
+                    <windowsExec>${installdir}/uninstall.exe</windowsExec>
+                    <windowsExecArgs></windowsExecArgs>
+                    <windowsIcon></windowsIcon>
+                    <windowsPath>${installdir}/</windowsPath>
+                </startMenuShortcut>
+            </startMenuShortcutList>
+        </component>
+    </componentList>
+    <parameterList>
+        <directoryParameter>
+            <name>installdir</name>
+            <description>Installer.Parameter.installdir.description</description>
+            <explanation>Installer.Parameter.installdir.explanation</explanation>
+            <value>${platform_install_prefix}/${product_shortname}-${product_version}</value>
+            <default>${platform_install_prefix}/${product_shortname}-${product_version}</default>
+            <allowEmptyValue>0</allowEmptyValue>
+            <ask>yes</ask>
+            <cliOptionName>prefix</cliOptionName>
+            <mustBeWritable>yes</mustBeWritable>
+            <mustExist>0</mustExist>
+            <width>40</width>
+        </directoryParameter>
+
+	<!-- <infoParameter>
+            <name>serverinfo</name>
+            <title>Web Server</title>
+            <explanation>Web Server Settings</explanation>
+            <value>Important Information! In the following screen you will be asked to provide (...)</value>
+        </infoParameter> -->
+	    </parameterList>
+    <platformOptionsList>
+        <platformOptions>
+            <platform>linux</platform>
+        </platformOptions>
+    </platformOptionsList>
+</project>
+
