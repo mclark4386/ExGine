@@ -1,0 +1,97 @@
+\hypertarget{classPOSphere}{
+\section{POSphere Class Reference}
+\label{classPOSphere}\index{POSphere@{POSphere}}
+}
+Class for sphere Physics Objects.  
+
+
+{\tt \#include $<$pobject.h$>$}
+
+Inheritance diagram for POSphere::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classPOSphere}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classPOSphere_17904f3eeceb2ba07931d6d359bbeebe}{update} ()
+\begin{CompactList}\small\item\em default base destructer \item\end{CompactList}\item 
+Scalar \hyperlink{classPOSphere_798625bc33390f84032dd30b5abaa112}{detectCollision} (\hyperlink{classPObject}{PObject} $\ast$object)
+\begin{CompactList}\small\item\em pure virtual detect collision \item\end{CompactList}\item 
+varList \hyperlink{classPOSphere_cab4d5434c63870cd383d38eb985a4fd}{getStats} ()
+\begin{CompactList}\small\item\em pure virtual get Statistics for the object \item\end{CompactList}\item 
+\hypertarget{classPOSphere_39a1a0d77b89ead931e6bef08d41bdd0}{
+void \hyperlink{classPOSphere_39a1a0d77b89ead931e6bef08d41bdd0}{setStats} (varList \_\-stats)}
+\label{classPOSphere_39a1a0d77b89ead931e6bef08d41bdd0}
+
+\begin{CompactList}\small\item\em pure virtual set stats \item\end{CompactList}\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classPOSphere_d9ae7837bb073b0e88c2def2b3b69412}{
+Scalar \textbf{radius}}
+\label{classPOSphere_d9ae7837bb073b0e88c2def2b3b69412}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class for sphere Physics Objects. 
+
+This is the math base for the mathematic simplistic representation of spherical physics based objects 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPOSphere_17904f3eeceb2ba07931d6d359bbeebe}{
+\index{POSphere@{POSphere}!update@{update}}
+\index{update@{update}!POSphere@{POSphere}}
+\subsubsection[update]{\setlength{\rightskip}{0pt plus 5cm}void POSphere::update ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPOSphere_17904f3eeceb2ba07931d6d359bbeebe}
+
+
+default base destructer 
+
+pure virtual update 
+
+Implements \hyperlink{classPObject_587e0263ce46133bf886729f890f9f2b}{PObject}.\hypertarget{classPOSphere_798625bc33390f84032dd30b5abaa112}{
+\index{POSphere@{POSphere}!detectCollision@{detectCollision}}
+\index{detectCollision@{detectCollision}!POSphere@{POSphere}}
+\subsubsection[detectCollision]{\setlength{\rightskip}{0pt plus 5cm}Scalar POSphere::detectCollision ({\bf PObject} $\ast$ {\em object})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPOSphere_798625bc33390f84032dd30b5abaa112}
+
+
+pure virtual detect collision 
+
+This is the function that we will use to figure out the distance from another object and thus if we collided with it \begin{Desc}
+\item[Returns:]Scalar value that is $>$0 if there is no collision =0 if they are just touching and $<$0 if they have hit to intersection(hit with force) \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em brings}]in a pointer to a physics object to test for distance/collision \end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classPObject_e1828c1830e8e9924ca4c560cbe2f933}{PObject}.\hypertarget{classPOSphere_cab4d5434c63870cd383d38eb985a4fd}{
+\index{POSphere@{POSphere}!getStats@{getStats}}
+\index{getStats@{getStats}!POSphere@{POSphere}}
+\subsubsection[getStats]{\setlength{\rightskip}{0pt plus 5cm}varList POSphere::getStats ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPOSphere_cab4d5434c63870cd383d38eb985a4fd}
+
+
+pure virtual get Statistics for the object 
+
+This is the function that we will use to get the object's data for the objects \begin{Desc}
+\item[Returns:]returns a list of stats. The first is the type ID. \end{Desc}
+\begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em none}]\end{description}
+\end{Desc}
+
+
+Implements \hyperlink{classPObject_4def469478987ead107c777d31790092}{PObject}.
+
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+pobject.h\end{CompactItemize}

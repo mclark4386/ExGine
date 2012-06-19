@@ -1,0 +1,4 @@
+diffuse not found
+normal map not found
+making root
+before:0x7fbf2d811f00

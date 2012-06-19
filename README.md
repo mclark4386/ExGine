@@ -6,6 +6,7 @@ thought people might like a look at the code... I was focusing on
 playing with the latest techniques of the time (OpenGL3 was just
 released).
 
+This was the branch in which I was working on implementing GPU-side mesh animation.
 
 INSTALL
 ----------------------------------
