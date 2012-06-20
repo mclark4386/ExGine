@@ -20,6 +20,7 @@ copy the data folder and the binary file where ever (use the Makefile in the sou
 
 
 LICENSE: TBA (till then all rights reserved by Matthew Clark, and this may not be used by anyone without his approval)
+
 COPYRIGHTS: Belong to those who originally made them (assume I didn't make the images, ship created by Travis Jones).
 
 
